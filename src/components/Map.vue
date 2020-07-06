@@ -14,6 +14,9 @@
           :key="index"
           :onClick="() => openCard(cafe.website)"
         />
+         <div class="noFind" v-if="!filteredProfiles.length">
+          Sorry, we could not find anything! 
+        </div>
       </div>
     </div>
   </div>
@@ -170,12 +173,13 @@ export default {
 }
 .mapPart {
   width: 100%;
+  padding: 0;
 }
 .mapPart__map {
   position: relative;
 
   width: 100%;
-  height: 100vw;
+  height: 100vh;
   z-index: 0;
 }
 

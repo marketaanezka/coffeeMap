@@ -16,8 +16,8 @@
     <router-view></router-view>
     <div class="footer">
       <div class="author">Icons created by Freepic, downloaded from www.flaticon.com</div>
-      <div class="suggestCafe">
-        <router-link class="suggest" to="/form">Add new Coffeeshop</router-link>
+      <div class="copyright">
+       &#169;Krucká, Benešová
       </div>
     </div>
   </div>
@@ -184,23 +184,11 @@ html {
   left: 0;
   right: 0;
   background-color: #55bece;
-  display: flex;
-  justify-content: space-between;
+  height: 35px;
   z-index: 10;
-}
-.suggest {
-  display: block;
-  text-align: center;
-  color: #fff;
-  padding: 0.5rem;
-  font-weight: 400;
-  font-size: 0.8rem;
-  letter-spacing: 0.1rem;
-}
-.suggest:hover {
-  text-decoration: none;
-  color: white;
-  background-color: #16283e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .navItem:hover {
@@ -211,5 +199,10 @@ html {
 
 .author {
   font-size: 1px;
+}
+
+.copyright {
+  font-size: 8px;
+  padding: 20px;
 }
 </style>
